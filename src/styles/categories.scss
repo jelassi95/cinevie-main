@@ -1,0 +1,28 @@
+#car-category {
+  color: white;
+  width: 100%;
+  padding: 0vw 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+.categoriesMovies-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .categoriesMovies-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .categoriesMovies-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

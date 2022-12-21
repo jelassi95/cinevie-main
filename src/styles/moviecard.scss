@@ -1,0 +1,135 @@
+#car {
+  color: white;
+  width: 100%;
+  padding: 0vw 10vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+@media screen  and (max-width:600px){
+  #car {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }  
+}
+.car-item {
+
+  width: 300px;
+  height: 30em;
+  margin: 1em;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0.5em;
+  transition: all 0.2s;
+  min-width: 250px;
+}
+
+  ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+.car-item:hover {
+  width: 320px;
+  margin-left: 0em;
+  margin-right: 0em;
+}
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+.details {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  background-image: linear-gradient(
+    var(--transparent),
+    var(--semi-transparent),
+    var(--semi-transparent)
+  );
+  opacity: 0;
+  transition: all 0.2s;
+  user-select: none;
+}
+.details-text {
+  position: relative;
+  z-index: 4;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.car-item-link {
+  margin: 0.2em;
+  padding: 0.2em;
+  border: 0.1em solid var(--transparent);
+  box-shadow: 0.15em 0.15em #26b79f;
+  text-decoration: none;
+  color: white;
+}
+@media (hover: hover) {
+  .car-item:hover > .details {
+    opacity: 1;
+  }
+
+  .car-item-link:hover {
+    border: 0.1em solid #26b79f;
+    background-color: #26b79f;
+    color: black;
+    box-shadow: 0.15em 0.15em var(--transparent);
+  }
+}
+
+@media (hover: none) {
+  .details {
+    opacity: 1;
+  }
+
+  .car-item-link {
+    border: 0.1em solid #26b79f;
+    background-color: #26b79f;
+    color: black;
+    box-shadow: 0.15em 0.15em var(--transparent);
+  }
+}
+
+#peaky-blinders {
+  background-image: url("https://www.cinematographe.it/wp-content/uploads/2022/06/Peaky-Blinders-Stagione-6.jpg");
+}
+
+#manifest {
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/manifest-1624451255.jpeg?crop=1xw:0.8823529411764706xh;center,top&resize=1200:*");
+}
+
+#person-of-interest {
+  background-image: url("https://cdn-images-1.medium.com/max/1200/1*H3tLarfRgOSz2RA5F9Pobg.jpeg");
+}
+
+#money-heist {
+  background-image: url("https://www.cnet.com/a/img/resize/e82afc5453960f7f8fd67c5bb4aaef8108b7f62a/2019/06/20/41b78c8f-c2f3-463e-879c-2cc619d43edf/casa-de-papel-parte-3.jpg?auto=webp");
+}
+
+#stranger-things {
+  background-image: url("https://occ-0-3212-2705.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABS6v2gvwesuRN6c28ZykPq_fpmnQCJwELBU-kAmEcuC9HhWX-DfuDbtA-bfo-IrfgNtxl0qwJJlhI6DENsGFXknKkjhxPGTV-qhp.jpg?r=608");
+}
+.titre-accueil{
+  color:#F0F0F0;
+  margin-top: 100px;
+  font-family:Montserrat;
+  font-weight: normal;
+
+}

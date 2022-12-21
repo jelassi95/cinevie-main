@@ -1,0 +1,24 @@
+.fix-footer {
+    justify-content: center!important;
+    gap:250px;
+}
+@media screen  and (max-width:600px){
+    .fix-footer {
+        justify-content: flex-start !important;
+        gap:0px;
+        flex-direction: column; 
+    }  
+}
+@media screen  and (max-width:1000px) and (min-width:601px)  {
+    .fix-footer {
+        justify-content: flex-start !important;
+        gap:50px;
+        flex-direction: column;
+    }  
+}
+@media screen  and (max-width:1300px) and (min-width:1001px)  {
+    .fix-footer {
+        gap:20px;
+        
+    }  
+}
