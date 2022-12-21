@@ -20,7 +20,7 @@ const Home = () => {
     <>
       <Navigation />
       <CitiesSlider slides={popular.filter((_,index)=> index>10 && index<21).map(p=>({img:`https://image.tmdb.org/t/p/original${p.poster_path}`,country:"",city:p.title}))} />
-      <MoviesCards pageTitle= "FILM BIOGRAPHIE" background="#26273e" />
+      <MoviesCards pageTitle= "FILMS BIOGRAPHIQUES" background="#26273e" />
       <Footer/>
     </>
   );
